@@ -1,24 +1,70 @@
 .InfoContainer{
 	background: #e6e6e6;
-	border:1px solid black;
+	border:1px solid #e6e6e6;
 	margin-top:40px;
+	margin-top:4%;
 }
 
 
-.MidleContainer{
-	margin-left:300px;
-	margin-right:300px;
-	display:flex;
-    background:white;
-	font-family:sans-serif;
-	margin-top:5%;	
-	padding-bottom:10%;
+.responsiveImage{
 	margin-top:10px;
-	margin-bottom:40px;
-	text-align:center;
-	background:white;
+	width:100%;
+	height:5%;
 }
 .MidleContainer2{
 	border:1px solid red;
 	bacground:blue;
+}
+@media screen and (max-width: 2000px){
+	.InfoContainer{
+		width:100%;
+	}
+	.responsiveImage{
+	margin-top:10px;
+	margin-left:350px;
+	width:50%;
+	height:auto;
+}
+}
+@media screen and (max-width: 1500px){
+	.InfoContainer{
+		width:100%;
+	}
+	.responsiveImage{
+	margin-top:10px;
+	margin-left:350px;
+	width:50%;
+	height:auto;
+}
+}
+@media screen and (max-width: 1047px){
+	.InfoContainer{
+		width:100%;
+	}
+	.responsiveImage{
+	margin-top:10px;
+	margin-left:0px;
+	width:100%;
+	height:auto;
+}
+}
+@media screen and (max-width: 900px){
+	.InfoContainer{
+		width:100%;
+	}
+	.responsiveImage{
+	margin-top:10px;
+	margin-left:0px;
+	width:100%;
+	height:auto;
+}
+@media screen and (max-width: 600px){
+	.InfoContainer{
+		width:100%;
+	}
+	.responsiveImage{
+	margin-top:10px;
+	margin-left:0px;
+	width:100%;
+	height:auto;
 }

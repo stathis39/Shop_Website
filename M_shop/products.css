@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 .slide{
 	background: #e6e6e6;
-	border:1px solid black;
+	border:1px solid #e6e6e6;
 	margin-top:40px;
+	margin-top:4%;
 }
 .Containers{
-	margin-left:300px;
-	margin-right:300px;
+	margin-left:250px;
+	margin-right:150px;
 	display:flex;
     background:white;
 	font-family:sans-serif;
-	margin-top:5%;	
+	margin-top:15%;	
 	padding-bottom:10%;
 	margin-top:10px;
 	margin-bottom:40px;

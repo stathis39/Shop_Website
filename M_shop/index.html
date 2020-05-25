@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/1dafd7320c.js" crossorigin="anonymous"></script>
  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -23,28 +24,40 @@
 				<a href="information.html" class="icon-a"><i class="far fa-address-book" style="color:black;"></i><span style="color:black;"> contact</span></a>
 			</div>
 		</div>
-		<div class="nav_search_wrapper">
-			<div class="navigation">
-				<ul>
-					<li><a href="index.html" style="text-decoration:underline;text-decoration-color:white;" >Το καταστημα μας</a></li>
-					<li><a href="#">Υπηρεσιες</a></li>
-					<li><a href="products.html">Προϊοντα Μαυριδης</a></li>
-					<li><a href="information.html">Πληροφοριες καταστηματος</a></li>
-					<div class="search-btn">
-					<input type="text" placeholder="search related o site">
-					<a href="#"><i class="fas fa-search"></i></a>
-					</div>
-				</ul>
-			</div>
-			
-		
-		</div>
+	 <nav>
+      <ul>
+<li class="logo"><i class="fas fa-shopping-cart" style="padding-bottom:20px;"></i></li>
+<li class="btn" ><span class="fas fa-bars"></span></li>
+<div class="items">
+<li><a href="index.html">Το Κατάστημα μας</a></li>
+<li><a href="products.html">Προϊόντα</a></li>
+<li><a href="information.html">Πληροφορίες Καταστήματος</a></li>
+</div>
+<li class="search-icon">
+          <input type="search" placeholder="Search">
+          <label class="icon">
+            <span class="fas fa-search"></span>
+          </label>
+</li>
+</ul>
+</nav>
 	</div>
 </header>
+<!--script gia to  btn-->
+  <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          document.getElementById('mainimage').style.display='none';
+         
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
 <!-- End of header section -->
 <div class="slider_image">
 	<div class="main_image">
-		<img src="png/minimarket.jpg" height="600">
+	<section id="mainimage"><img src="png/minimarket.jpg" height="600"></section>
 	</div> 
 </div>
 <!-- start categories section -->
@@ -86,6 +99,7 @@
 			</div>		
 		</div>
 	</div>
+</div>
 <!-- product section started -->
 <div class="product">
 	<div class="product_heading">
@@ -120,7 +134,7 @@
 		</div>
 	</div>
 </div>	
-<!-- footer section started -->
+<!-- footer section started -->	
 <footer>
       <div class="main-content">
         <div class="left box">
@@ -153,8 +167,6 @@
 </div>
 
 </div>
-
-	
-</div>
+</footer>
 </body>
 </html>
