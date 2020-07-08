@@ -755,7 +755,7 @@ nav ul li.btn1 span.show:before{
 	float:left;
 }
 }
-@media screen and (max-width: 505px) {
+@media only screen and (max-width: 505px) {
   nav ul{
     flex-wrap: nowrap;
   }
