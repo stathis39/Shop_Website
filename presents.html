@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mauridis E-shop</title>
+<meta content="" /><link rel="shortcut icon" href="png/stroller.png" type="" />
+<link rel="stylesheet" type="text/css" href="food.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/1dafd7320c.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="main">
+<header>
+
+	<div class="header_wrapper">
+		<div class="logo_icon_wrapper">
+			<div class="logo">
+		 	<img src="png/Untitled2.png">
+		 	</div>
+	
+			<div class="icon">
+				<a href="index.html" class="icon-a"><i class="fas fa-user-friends" style="color:black;"></i><span style="color:black;"> Guest</span></a>
+				<a href="information.html" class="icon-a"><i class="far fa-address-book" style="color:black;"></i><span style="color:black;"> contact</span></a>
+			</div>
+		</div>
+	 <nav>
+      <ul>
+<li class="logo"><i class="fas fa-shopping-cart" style="padding-bottom:20px;"></i></li>
+<li class="btn" ><span class="fas fa-bars"></span></li>
+<div class="items">
+<li><a href="index.html">Το Κατάστημα μας</a></li>
+<li><a href="products.html">Προϊόντα</a></li>
+<li><a href="information.html">Πληροφορίες Καταστήματος</a></li>
+</div>
+<li class="search-icon">
+          <input type="search" placeholder="Search">
+          <label class="icon">
+            <span class="fas fa-search"></span>
+          </label>
+</li>
+</ul>
+</nav>
+	</div>
+</header>
+<script type="text/javascript">
+
+function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	  document.body.style.backgroundColor = " #e6e6e6";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+	  document.body.style.backgroundColor = "white";
+	}
+</script>
+<script type="text/javascript" src="presents.js"></script>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a onclick="party()" style="cursor:pointer;">Είδη party</a>
+  <a onclick="xristougeniatika()" style="cursor:pointer;">Χριστουγεννιάτικα</a>
+  <a onclick="pasxalina()" style="cursor:pointer;">Πασχαλινά</a>
+  <a onclick="apokriatika()" style="cursor:pointer;">Αποκριάτικα</a>
+  <a onclick="diafora()" style="cursor:pointer;">Διάφορα</a>
+</div>
+  <!-- eidoi party -->
+<div class="shopping-cart" id="party" " >
+  <!-- Title -->
+  <div class="title">
+    Κατηγορίες Εποχιακών Δώρων
+    <span style="font-size:30px;cursor:pointer;padding-left:30px; color:#E1E8EE; line-height: 40%;" onclick="openNav()">&#9776;</span>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;">Είδη party</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Χριστουγεννιάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Πασχαλινά</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Αποκριάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Διάφορα</h5>
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+ 
+
+ 
+    <div class="total-price">$549</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Maison Margiela</span>
+      <span>Future Sneakers</span>
+      <span>White</span>
+    </div>
+ 
+    <div class="total-price">$870</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Our Legacy</span>
+      <span>Brushed Scarf</span>
+      <span>Brown</span>
+    </div>
+
+ 
+    <div class="total-price">$349</div>
+  </div>
+
+</div>
+<!-- xristougeniatika -->
+<div class="shopping-cart" id="xristougeniatika" style="display:none;" >
+  <!-- Title -->
+  <div class="title">
+    Κατηγορίες Εποχιακών Δώρων
+    <span style="font-size:30px;cursor:pointer;padding-left:30px; color:#E1E8EE; line-height: 40%;" onclick="openNav()">&#9776;</span>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Είδη party</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;">Χριστουγεννιάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Πασχαλινά</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Αποκριάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Διάφορα</h5>
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+ 
+
+ 
+    <div class="total-price">$549</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Maison Margiela</span>
+      <span>Future Sneakers</span>
+      <span>White</span>
+    </div>
+ 
+    <div class="total-price">$870</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Our Legacy</span>
+      <span>Brushed Scarf</span>
+      <span>Brown</span>
+    </div>
+
+ 
+    <div class="total-price">$349</div>
+  </div>
+
+</div>
+<!-- pasxalina -->
+<div class="shopping-cart" id="pasxalina" style="display:none;" >
+  <!-- Title -->
+  <div class="title">
+    Κατηγορίες Εποχιακών Δώρων
+    <span style="font-size:30px;cursor:pointer;padding-left:30px; color:#E1E8EE; line-height: 40%;" onclick="openNav()">&#9776;</span>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Είδη party</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Χριστουγεννιάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;">Πασχαλινά</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Αποκριάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Διάφορα</h5>
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+ 
+
+ 
+    <div class="total-price">$549</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Maison Margiela</span>
+      <span>Future Sneakers</span>
+      <span>White</span>
+    </div>
+ 
+    <div class="total-price">$870</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Our Legacy</span>
+      <span>Brushed Scarf</span>
+      <span>Brown</span>
+    </div>
+
+ 
+    <div class="total-price">$349</div>
+  </div>
+
+</div>
+<!-- apokriatika -->
+<div class="shopping-cart" id="apokriatika" style="display:none;" >
+  <!-- Title -->
+  <div class="title">
+    Κατηγορίες Εποχιακών Δώρων
+    <span style="font-size:30px;cursor:pointer;padding-left:30px; color:#E1E8EE; line-height: 40%;" onclick="openNav()">&#9776;</span>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Είδη party</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Χριστουγεννιάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Πασχαλινά</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;">Αποκριάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Διάφορα</h5>
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+ 
+
+ 
+    <div class="total-price">$549</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Maison Margiela</span>
+      <span>Future Sneakers</span>
+      <span>White</span>
+    </div>
+ 
+    <div class="total-price">$870</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Our Legacy</span>
+      <span>Brushed Scarf</span>
+      <span>Brown</span>
+    </div>
+
+ 
+    <div class="total-price">$349</div>
+  </div>
+
+</div>
+<!-- diafora -->
+<div class="shopping-cart" id="diafora" style="display:none;" >
+  <!-- Title -->
+  <div class="title">
+    Κατηγορίες Εποχιακών Δώρων
+    <span style="font-size:30px;cursor:pointer;padding-left:30px; color:#E1E8EE; line-height: 40%;" onclick="openNav()">&#9776;</span>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Είδη party</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Χριστουγεννιάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Πασχαλινά</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;display:none;">Αποκριάτικα</h5>
+    <h5 style=" float: right; color:black;font-family:Snell Roundhand, cursive	;font-size:25px;">Διάφορα</h5>
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+      <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+ 
+
+ 
+    <div class="total-price">$549</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Maison Margiela</span>
+      <span>Future Sneakers</span>
+      <span>White</span>
+    </div>
+ 
+    <div class="total-price">$870</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="fas fa-times"></span>
+      <span class="fas fa-heart"></span>
+    </div>
+ 
+    <div class="image">
+       <img src="zimarika/0019.png" style="width:100px;height:100px;" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Our Legacy</span>
+      <span>Brushed Scarf</span>
+      <span>Brown</span>
+    </div>
+
+ 
+    <div class="total-price">$349</div>
+  </div>
+
+</div>
+
+<!-- footer section started -->	
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <h1>Σχετικά με εμάς</h1>
+<div class="content">
+            <p>Στόχος μας είναι να προσφέρουμε στους καταναλωτές τις οικονομικότερες τιμές για τα  υψηλής ποιότητας προϊόντα που διαθέτουμε ώστε να ικανοποιούμε τις ανάγκες και επιθυμίες των πελατών μας</p>
+<div class="social">
+              <a href="https://www.facebook.com/pg/Ισαακ-Ευστ-Μαυριδης-690214941133058/about/?ref=page_internal"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://www.instagram.com/sakismavridis66/?hl=el"><span class="fab fa-instagram"></span></a>
+              
+            </div>
+</div>
+</div>
+<div class="center box">
+          <h1>Διεύθυνση / Επικοινωνία</h1>
+<div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">ΒΕΝΙΖΕΛΟΥ 38 Θεσσαλονίκη</span>
+            </div>
+<div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+ 231 304 4244</span>
+            </div>
+<div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">sakismavridis66@gmail.com</span>
+            </div>
+</div>
+</div>
+</div>
+
+</footer>
+</div>
+</body>
