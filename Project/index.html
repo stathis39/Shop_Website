@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title >ΑΔΙΣΕ: Quarto board game</title>
+
+        <!--Botstrap core CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/quatro.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/quatrojs.js"></script>
+    </head>
+    <body>
+        <p><h1>Quarto Board Game</h1></p>
+
+        <div id='game_initializer'>
+            <h4>You are ?</h4>
+            <input id='username'placeholder="Username"> 
+            <select id='PLAYER'>
+            <option value='p1'>First Player</option>
+            <option value='p2'>Second Player</option>
+            </select>
+            <button id='quarto_login' class='btn btn-primary'>Εnter the game</button><br>
+            </div>
+        </div>
+            <div id='game_info'>
+            </div>
+
+            
+
+
+<div id="board"></div>
+<div id='move_div'>
+<br><h4>Choose a pawn for the opponent:</h4>
+ <div id="quarto_board"></div>
+</div>
+<div id="pawn_to_play">
+    <br><h4>That is your Choosen  pawn :</h4><div id="chosen_piece"></div>
+</div>
+
+
+
+
+<!--Popup displayed at the first game to learn the rules-->
+<div id="startingTutorial">
+
+    <p>
+        Do you know how to play ?
+    </p>
+    <table>
+        <tr>
+            <td class="tutoButton" id="startingTutorialYes">YES</td>
+            <td class="tutoButton" id="startingTutorialNo">NO</td>
+        </tr>
+    </table>
+</div>
+
+
+<!--The tutorial ball-->
+<div id="tutorial">
+    <h3>RULES</h3>
+</div>
+
+<!--The tutorial panel step 1-->
+<div class="tutorial" id="step1">
+    <p>
+        In Quarto, there are 16 unique pieces, each of which is either:
+        <ul>
+            <li>Tall or short</li>
+            <li>Black or white</li>
+            <li>Square or circular</li>
+            <li>Hollow-top or solid-top</li>
+        </ul>
+    </p>
+</div>
+
+<!--Tutorial step 2-->
+<div class="tutorial tutorialBig" id="step2">
+    <p>
+        A player wins by doing a <span class="quarto">QUARTO</span>. <br/><br/>
+        A <span class="quarto">QUARTO</span> can be done by placing on the board four pieces with a common attribute in a line or in a row.<br/><br/>
+    </p>
+</div>
+
+<!--Tutorial step 3-->
+<div class="tutorial tutorialBig" id="step3">
+    <p>
+        At the beginning of his turn, a player places on the board the piece selected by his opponent. <br/><br/>
+        If a <span class="quarto">QUARTO</span> is done, the current player won. If not, he selects a piece for his opponent, and his turn is over.<br/><br/>
+        The first player to do a <span class="quarto">QUARTO</span> wins the game!
+    </p>
+</div>
+
+
+</body>
+</html>
